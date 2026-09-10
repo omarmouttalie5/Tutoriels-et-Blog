@@ -1,0 +1,17 @@
+Nom,Signification,Type,Format,Taille,Obligatoire,Calculée
+id_article,Unique identifier of the article,Numeric,Integer (INT),10,Yes,No
+titre,Title of the article,Text,String (VARCHAR),255,Yes,No
+contenu,Content / body of the article,Text,Long Text (TEXT),,Yes,No
+date_publication,Publication date of the article,Date,DD/MM/YYYY,,Yes,No
+image,Article cover image path,Text,Path / URL,255,No,No
+id_auteur,Foreign key referencing the author,Numeric,Integer (INT),10,Yes,No
+id_category,Foreign key referencing the category,Numeric,Integer (INT),10,Yes,No
+id_auteur,Unique identifier of the author,Numeric,Integer (INT),10,Yes,No
+nom_auteur,Author's last name,Text,String (VARCHAR),100,Yes,No
+prenom_auteur,Author's first name,Text,String (VARCHAR),100,Yes,No
+image_auteur,Author profile picture path,Text,Path / URL,255,No,No
+email_auteur,Author's email address,Text,Email format,255,Yes,No
+mot_de_passe,Author's password hash,Text,Encrypted string,255,Yes,No
+date_inscription,Registration date of the author,Date,DD/MM/YYYY,,Yes,No
+id_category,Unique identifier of the category,Numeric,Integer (INT),10,Yes,No
+nom_category,Name of the category,Text,String (VARCHAR),100,Yes,No
